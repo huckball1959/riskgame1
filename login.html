@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Risk Game Login</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #111;
+      color: white;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 40px;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    .player-list {
+      width: 90%;
+      max-width: 600px;
+      margin-bottom: 40px;
+    }
+
+    .player-card {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #222;
+      border: 2px solid #333;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 10px;
+    }
+
+    .player-name {
+      font-size: 1.2em;
+    }
+
+    .player-color {
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .player-toggle input {
+      transform: scale(1.5);
+    }
+
+    .guest-inputs {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .guest-inputs input, .guest-inputs select {
+      padding: 5px;
+      font-size: 1em;
+    }
+
+    .start-button {
+      padding: 15px 30px;
+      font-size: 1.2em;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .start-button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>Login: Select Players</h1>
+
+  <div class="player-list">
+    <!-- Guido: Always present -->
+    <div class="player-card">
+      <div class="player-name">GUIDO</div>
+      <div class="player-color" style="background-color: blue;">Blue</div>
+      <div class="player-toggle"><input type="checkbox" checked disabled /></div>
+    </div>
+
+    <!-- Other default players -->
+    <div class="player-card">
+      <div class="player-name">NOOCH</div>
+      <div class="player-color" style="background-color: black; color: white;">Black</div>
+      <div class="player-toggle"><input type="checkbox" checked /></div>
+    </div>
+
+    <div class="player-card">
+      <div class="player-name">KARL</div>
+      <div class="player-color" style="background-color: pink; color: black;">Pink</div>
+      <div class="player-toggle"><input type="checkbox" checked /></div>
+    </div>
+
+    <div class="player-card">
+      <div class="player-name">MICKEY</div>
+      <div class="player-color" style="background-color: red;">Red</div>
+      <div class="player-toggle"><input type="checkbox" checked /></div>
+    </div>
+
+    <!-- Guest player 1 -->
+    <div class="player-card guest-inputs">
+      <input type="text" placeholder="Guest Name" />
+      <select>
+        <option value="">Choose Color</option>
+        <option value="green">Green</option>
+        <option value="yellow">Yellow</option>
+        <option value="orange">Orange</option>
+        <option value="purple">Purple</option>
+      </select>
+      <input type="checkbox" />
+    </div>
+
+    <!-- Guest player 2 -->
+    <div class="player-card guest-inputs">
+      <input type="text" placeholder="Guest Name" />
+      <select>
+        <option value="">Choose Color</option>
+        <option value="green">Green</option>
+        <option value="yellow">Yellow</option>
+        <option value="orange">Orange</option>
+        <option value="purple">Purple</option>
+      </select>
+      <input type="checkbox" />
+    </div>
+  </div>
+
+  <button class="start-button" onclick="startGame()">Start Game</button>
+
+  <script>
+    function startGame() {
+      // Later: Collect player info, maybe save it in localStorage/sessionStorage
+      window.location.href = 'gameboard.html';
+    }
+  </script>
+</body>
+</html>

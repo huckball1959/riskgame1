@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Select Players</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #111;
+      color: #fff;
+    }
+    h1 {
+      text-align: center;
+    }
+    .player-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      margin: 40px 0;
+    }
+    .player {
+      font-size: 1.5rem;
+    }
+    .player input[type="checkbox"] {
+      margin-left: 10px;
+    }
+    .next-button {
+      display: block;
+      margin: 40px auto;
+      padding: 10px 30px;
+      font-size: 1.2rem;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .next-button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>Select Players</h1>
+  <div class="player-list">
+    <label class="player">GUIDO <input type="checkbox" value="GUIDO" /></label>
+    <label class="player">KARL <input type="checkbox" value="KARL" /></label>
+    <label class="player">MICKEY <input type="checkbox" value="MICKEY" /></label>
+    <label class="player">NOOCH <input type="checkbox" value="NOOCH" /></label>
+  </div>
+  <button class="next-button" onclick="saveAndContinue()">NEXT</button>
+
+  <script>
+    function saveAndContinue() {
+      const checkboxes = document.querySelectorAll('.player input[type="checkbox"]');
+      const selectedPlayers = Array.from(checkboxes)
+        .filter(cb => cb.checked)
+        .map(cb => cb.value);
+
+      if (selectedPlayers.length < 2 || selectedPlayers.length > 4) {
+        alert("Please select between 2 and 4 players.");
+        return;
+      }
+
+      localStorage.setItem("selectedPlayers", JSON.stringify(selectedPlayers));
+
+      const blob = new Blob([JSON.stringify(selectedPlayers, null, 2)], { type: "application/json" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "selectedPlayers.txt";
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+
+      window.location.href = "player-order.html";
+    }
+  </script>
+</body>
+</html>

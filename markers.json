@@ -1,0 +1,254 @@
+[
+  {
+    "number": "001",
+    "territory": "Alaska",
+    "left": "174px",
+    "top": "154.4375px"
+  },
+  {
+    "number": "002",
+    "territory": "Northwest Territory",
+    "left": "253px",
+    "top": "161.4375px"
+  },
+  {
+    "number": "003",
+    "territory": "Greenland",
+    "left": "484px",
+    "top": "106.4375px"
+  },
+  {
+    "number": "004",
+    "territory": "Alberta",
+    "left": "246px",
+    "top": "221.4375px"
+  },
+  {
+    "number": "005",
+    "territory": "Ontario",
+    "left": "321px",
+    "top": "224.4375px"
+  },
+  {
+    "number": "006",
+    "territory": "Quebec",
+    "left": "393px",
+    "top": "230.4375px"
+  },
+  {
+    "number": "007",
+    "territory": "Western United States",
+    "left": "240px",
+    "top": "280.4375px"
+  },
+  {
+    "number": "008",
+    "territory": "Eastern United States",
+    "left": "314px",
+    "top": "294.4375px"
+  },
+  {
+    "number": "009",
+    "territory": "Central America",
+    "left": "252px",
+    "top": "341.4375px"
+  },
+  {
+    "number": "010",
+    "territory": "Venezuela",
+    "left": "284px",
+    "top": "394.4375px"
+  },
+  {
+    "number": "011",
+    "territory": "Brazil",
+    "left": "337px",
+    "top": "433.4375px"
+  },
+  {
+    "number": "012",
+    "territory": "Peru",
+    "left": "283px",
+    "top": "458.4375px"
+  },
+  {
+    "number": "013",
+    "territory": "Argentina",
+    "left": "307px",
+    "top": "520.4375px"
+  },
+  {
+    "number": "014",
+    "territory": "Iceland",
+    "left": "544px",
+    "top": "172.4375px"
+  },
+  {
+    "number": "015",
+    "territory": "Scandinavia",
+    "left": "597px",
+    "top": "219.4375px"
+  },
+  {
+    "number": "016",
+    "territory": "Ukraine",
+    "left": "673px",
+    "top": "226.4375px"
+  },
+  {
+    "number": "017",
+    "territory": "Great Britain",
+    "left": "536px",
+    "top": "269.4375px"
+  },
+  {
+    "number": "018",
+    "territory": "Northern Europe",
+    "left": "586px",
+    "top": "284.4375px"
+  },
+  {
+    "number": "019",
+    "territory": "Western Europe",
+    "left": "541px",
+    "top": "325.4375px"
+  },
+  {
+    "number": "020",
+    "territory": "Southern Europe",
+    "left": "615px",
+    "top": "323.4375px"
+  },
+  {
+    "number": "021",
+    "territory": "North Africa",
+    "left": "529px",
+    "top": "405.4375px"
+  },
+  {
+    "number": "022",
+    "territory": "Egypt",
+    "left": "595px",
+    "top": "376.4375px"
+  },
+  {
+    "number": "023",
+    "territory": "East Africa",
+    "left": "651px",
+    "top": "425.4375px"
+  },
+  {
+    "number": "024",
+    "territory": "Congo",
+    "left": "609px",
+    "top": "459.4375px"
+  },
+  {
+    "number": "025",
+    "territory": "South Africa",
+    "left": "617px",
+    "top": "513.4375px"
+  },
+  {
+    "number": "026",
+    "territory": "Madagascar",
+    "left": "674px",
+    "top": "506.4375px"
+  },
+  {
+    "number": "027",
+    "territory": "Siberia",
+    "left": "810px",
+    "top": "160.4375px"
+  },
+  {
+    "number": "028",
+    "territory": "Yakutsk",
+    "left": "902px",
+    "top": "118.4375px"
+  },
+  {
+    "number": "029",
+    "territory": "Kamchatka",
+    "left": "923px",
+    "top": "191.4375px"
+  },
+  {
+    "number": "030",
+    "territory": "Ural",
+    "left": "764px",
+    "top": "194.4375px"
+  },
+  {
+    "number": "031",
+    "territory": "China",
+    "left": "817px",
+    "top": "290.4375px"
+  },
+  {
+    "number": "032",
+    "territory": "Mongolia",
+    "left": "857px",
+    "top": "258.4375px"
+  },
+  {
+    "number": "033",
+    "territory": "Irkutsk",
+    "left": "868px",
+    "top": "198.4375px"
+  },
+  {
+    "number": "034",
+    "territory": "Japan",
+    "left": "931px",
+    "top": "283.4375px"
+  },
+  {
+    "number": "035",
+    "territory": "Afghanistan",
+    "left": "745px",
+    "top": "276.4375px"
+  },
+  {
+    "number": "036",
+    "territory": "Middle East",
+    "left": "667px",
+    "top": "351.4375px"
+  },
+  {
+    "number": "037",
+    "territory": "India",
+    "left": "765px",
+    "top": "341.4375px"
+  },
+  {
+    "number": "038",
+    "territory": "Siam",
+    "left": "832px",
+    "top": "345.4375px"
+  },
+  {
+    "number": "039",
+    "territory": "Indonesia",
+    "left": "878px",
+    "top": "396.4375px"
+  },
+  {
+    "number": "040",
+    "territory": "New Guinea",
+    "left": "959px",
+    "top": "402.4375px"
+  },
+  {
+    "number": "041",
+    "territory": "Western Australia",
+    "left": "894px",
+    "top": "464.4375px"
+  },
+  {
+    "number": "042",
+    "territory": "Eastern Australia",
+    "left": "961px",
+    "top": "449.4375px"
+  }
+]

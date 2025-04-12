@@ -1,0 +1,81 @@
+<!-- first-card.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>First Card Roll</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; padding: 2rem; }
+    .dice { display: inline-block; width: 60px; height: 60px; border: 2px solid #000; line-height: 60px; font-size: 2rem; margin: 10px; }
+    #results { margin-top: 2rem; }
+  </style>
+</head>
+<body>
+  <h1>Roll to See Who Gets the First Card</h1>
+  <button onclick="rollDice()">Roll</button>
+  <div id="dice-container"></div>
+  <div id="results"></div>
+  <button id="next-button" onclick="goToNext()" style="display:none">Next</button>
+
+  <script>
+    function rollDice() {
+      const data = JSON.parse(localStorage.getItem("gameData"));
+      const activePlayers = data.players.filter(p => p.active);
+
+      const rolls = activePlayers.map(player => ({
+        name: player.name,
+        roll: Math.floor(Math.random() * 6) + 1
+      }));
+
+      const container = document.getElementById("dice-container");
+      container.innerHTML = "";
+      rolls.forEach(r => {
+        const die = document.createElement("div");
+        die.className = "dice";
+        die.textContent = r.roll;
+        container.appendChild(die);
+      });
+
+      rolls.sort((a, b) => b.roll - a.roll);
+
+      const firstCardWinner = rolls[0].name;
+      const seating = data.seatingOrder;
+      const firstIndex = seating.indexOf(firstCardWinner);
+      const playerOrder = seating.slice(firstIndex).concat(seating.slice(0, firstIndex));
+
+      const playersWith11 = [playerOrder[0], playerOrder[1]];
+      const playersWith10 = [playerOrder[2], playerOrder[3]];
+
+      data.firstCardRollWinner = firstCardWinner;
+      data.playersWith10Territories = playersWith10;
+
+      localStorage.setItem("gameData", JSON.stringify(data));
+
+      const summary = `
+        <p><strong>${firstCardWinner}</strong> gets the first card and will receive 11 territories.</p>
+        <p>${playersWith11[1]} will also get 11 territories.</p>
+        <p>${playersWith10[0]} and ${playersWith10[1]} will each get 10 territories.</p>
+      `;
+
+      const results = document.getElementById("results");
+      results.innerHTML = summary;
+      
+      downloadTextFile("first-card-roll.txt", summary.replace(/<[^>]+>/g, ''));
+      document.getElementById("next-button").style.display = "inline-block";
+    }
+
+    function goToNext() {
+      window.location.href = "first-player.html";
+    }
+
+    function downloadTextFile(filename, content) {
+      const blob = new Blob([content], { type: "text/plain" });
+      const link = document.createElement("a");
+      link.href = URL.createObjectURL(blob);
+      link.download = filename;
+      link.click();
+    }
+  </script>
+</body>
+</html>

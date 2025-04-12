@@ -1,0 +1,78 @@
+<!-- first-player.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>First Player Roll</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; padding: 2rem; }
+    .dice { display: inline-block; width: 60px; height: 60px; border: 2px solid #000; line-height: 60px; font-size: 2rem; margin: 10px; }
+    #results { margin-top: 2rem; }
+  </style>
+</head>
+<body>
+  <h1>Roll to See Who Goes First</h1>
+  <button onclick="rollDice()">Roll</button>
+  <div id="dice-container"></div>
+  <div id="results"></div>
+  <button id="next-button" onclick="goToNext()" style="display:none">Next</button>
+
+  <script>
+    function rollDice() {
+      const data = JSON.parse(localStorage.getItem("gameData"));
+      const players = data.players.filter(p => p.active);
+
+      let contenders = players;
+      if (players.length === 4) {
+        contenders = players.filter(p => data.playersWith10Territories.includes(p.name));
+      }
+
+      const rolls = contenders.map(player => ({
+        name: player.name,
+        roll: Math.floor(Math.random() * 6) + 1
+      }));
+
+      const container = document.getElementById("dice-container");
+      container.innerHTML = "";
+      rolls.forEach(r => {
+        const die = document.createElement("div");
+        die.className = "dice";
+        die.textContent = r.roll;
+        container.appendChild(die);
+      });
+
+      rolls.sort((a, b) => b.roll - a.roll);
+      const topRoll = rolls[0].roll;
+      const winners = rolls.filter(r => r.roll === topRoll);
+
+      let firstPlayer;
+      if (winners.length === 1) {
+        firstPlayer = winners[0].name;
+        data.firstPlayer = firstPlayer;
+        localStorage.setItem("gameData", JSON.stringify(data));
+
+        const summary = `<p><strong>${firstPlayer}</strong> will go first.</p>`;
+        document.getElementById("results").innerHTML = summary;
+        downloadTextFile("first-player-roll.txt", summary.replace(/<[^>]+>/g, ''));
+        document.getElementById("next-button").style.display = "inline-block";
+      } else {
+        document.getElementById("results").innerHTML = `<p>Tie between: ${winners.map(w => w.name).join(", ")}. Roll again.</p>`;
+      }
+    }
+
+    function goToNext() {
+      // placeholder for game page
+      window.location.href = "game.html";
+    }
+
+    function downloadTextFile(filename, content) {
+      const blob = new Blob([content], { type: "text/plain" });
+      const link = document.createElement("a");
+      link.href = URL.createObjectURL(blob);
+      link.download = filename;
+      link.click();
+    }
+  </script>
+</body>
+</html>

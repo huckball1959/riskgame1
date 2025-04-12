@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Select Player Order</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #222;
+      color: #fff;
+      padding: 30px;
+    }
+    h1 {
+      text-align: center;
+      color: #00bcd4;
+    }
+    .player-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #333;
+      padding: 10px 20px;
+      margin: 10px auto;
+      border-radius: 8px;
+      max-width: 400px;
+    }
+    select {
+      font-size: 1em;
+      padding: 4px 8px;
+    }
+    button {
+      display: block;
+      margin: 30px auto 0;
+      padding: 10px 30px;
+      font-size: 1.2em;
+      background-color: #00bcd4;
+      color: #000;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0097a7;
+    }
+  </style>
+</head>
+<body>
+  <h1>Select Table Order</h1>
+  <div id="playerList"></div>
+  <button onclick="saveAndContinue()">Next</button>
+
+  <script>
+    const playerList = JSON.parse(localStorage.getItem('selectedPlayers')) || [];
+    const playerListDiv = document.getElementById('playerList');
+
+    // Build list
+    playerList.forEach(player => {
+      const row = document.createElement('div');
+      row.className = 'player-row';
+
+      const nameSpan = document.createElement('span');
+      nameSpan.textContent = player;
+
+      const select = document.createElement('select');
+      select.name = 'order';
+      for (let i = 1; i <= playerList.length; i++) {
+        const opt = document.createElement('option');
+        opt.value = i;
+        opt.text = i;
+        select.appendChild(opt);
+      }
+      select.dataset.player = player;
+
+      row.appendChild(nameSpan);
+      row.appendChild(select);
+      playerListDiv.appendChild(row);
+    });
+
+    function saveAndContinue() {
+      const selects = document.querySelectorAll('select[name="order"]');
+      const orderMap = {};
+      const usedNumbers = new Set();
+
+      for (let select of selects) {
+        const order = parseInt(select.value);
+        const player = select.dataset.player;
+
+        if (usedNumbers.has(order)) {
+          alert(`Duplicate order number detected: ${order}. Please assign a unique order to each player.`);
+          return;
+        }
+
+        usedNumbers.add(order);
+        orderMap[player] = order;
+      }
+
+      localStorage.setItem('playerOrder', JSON.stringify(orderMap));
+
+      // Create a downloadable file
+      const text = Object.entries(orderMap)
+        .map(([name, order]) => `${name}: ${order}`)
+        .join('\n');
+      const blob = new Blob([text], { type: 'text/plain' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'playerOrder.txt';
+      a.click();
+
+      // Decide next page based on number of players
+      const playerCount = playerList.length;
+
+      setTimeout(() => {
+        if (playerCount === 4) {
+          window.location.href = 'first-card.html';
+        } else if (playerCount === 3) {
+          window.location.href = 'first-player.html';
+        } else {
+          alert('Only 3 or 4 players are currently supported.');
+        }
+      }, 500); // Small delay for download to trigger
+    }
+  </script>
+</body>
+</html>

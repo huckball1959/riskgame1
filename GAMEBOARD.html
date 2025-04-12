@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Risk Map with Markers</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      display: flex;
+      width: 97%;
+      max-width: 1920px;
+      height: 92%;
+      max-height: 1080px;
+      background-color: #ffffff;
+      border: 2px solid #444;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .framed {
+      border: 1px solid #000;
+      padding: 5px;
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .left-pane {
+      flex: 3;
+      position: relative;
+      background-color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .image {
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+
+    .marker {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      background-color: #ff0000;
+      color: #fff;
+      font-size: 14px;
+      font-weight: bold;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #000;
+      z-index: 10;
+    }
+
+    .right-pane {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .top-pane, .bottom-pane {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #000;
+      margin: 3px 0;
+    }
+
+    .top-pane {
+      background-color: #d1e7dd;
+    }
+
+    .bottom-pane {
+      background-color: #f8d7da;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="framed left-pane" id="map">
+      <img src="riskmap.png" alt="Risk Map" class="image" />
+    </div>
+    <div class="framed right-pane">
+      <div class="top-pane">
+        <p>Top Pane</p>
+      </div>
+      <div class="bottom-pane">
+        <p>Bottom Pane</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    async function loadMarkers() {
+      try {
+        const response = await fetch('markers.json');
+        if (!response.ok) throw new Error('Failed to load markers.json');
+        const markers = await response.json();
+
+        const map = document.getElementById('map');
+
+        markers.forEach((marker) => {
+          const el = document.createElement('div');
+          el.className = 'marker';
+          el.textContent = marker.number;
+          el.style.left = marker.left;
+          el.style.top = marker.top;
+          map.appendChild(el);
+        });
+      } catch (err) {
+        console.error('Error loading markers:', err);
+      }
+    }
+
+    loadMarkers();
+  </script>
+</body>
+</html>
