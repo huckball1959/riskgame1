@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg1"
+   width="800"
+   height="600"
+   viewBox="0 0 47.028976 35.271732"
+   sodipodi:docname="mapsq.svg"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.56259643"
+     inkscape:cx="231.96023"
+     inkscape:cy="247.95749"
+     inkscape:window-width="1600"
+     inkscape:window-height="837"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g1" />
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="map"
+     id="g1">
+    <path
+       style="fill:#000000"
+       d="M 38.893383,6.2722798 V 3.9365773 h 2.598141 2.598141 v 2.3357025 2.3357025 h -2.598141 -2.598141 z"
+       id="path42"
+       inkscape:label="yakutsk" />
+    <path
+       style="fill:#000000"
+       d="m 21.677419,9.5527608 v -0.68234 h 0.918535 0.918534 v 0.68234 0.6823402 h -0.918534 -0.918535 z"
+       id="path41"
+       inkscape:label="iceland" />
+    <path
+       style="fill:#000000"
+       d="M 10.340076,6.5609621 V 2.8343356 h 5.484965 5.484964 v 3.7266265 3.7266269 h -5.484964 -5.484965 z"
+       id="path40"
+       inkscape:label="greenland" />
+    <path
+       style="fill:#000000"
+       d="m 4.5664296,8.4242754 v -1.915801 h 2.8080918 2.8080916 v 1.915801 1.9158006 H 7.3745214 4.5664296 Z"
+       id="path39"
+       inkscape:label="north_west_territory" />
+    <path
+       style="fill:#000000"
+       d="M 0.62985236,9.0803716 V 6.4559867 H 2.4931656 4.3564788 V 9.0803716 11.704756 H 2.4931656 0.62985236 Z"
+       id="path38"
+       inkscape:label="alaska" />
+    <path
+       style="fill:#000000"
+       d="M 31.597594,8.3717877 V 4.4089665 h 1.942044 1.942045 v 3.9628212 3.9628213 h -1.942045 -1.942044 z"
+       id="path37"
+       inkscape:label="ural" />
+    <path
+       style="fill:#000000"
+       d="M 38.893383,10.891197 V 9.0278839 h 1.417168 1.417168 v 1.8633131 1.863313 h -1.417168 -1.417168 z"
+       id="path36"
+       inkscape:label="irkutsk" />
+    <path
+       style="fill:#000000"
+       d="M 44.509567,8.5817384 V 4.2515035 h 0.708584 0.708584 v 4.3302349 4.3302346 h -0.708584 -0.708584 z"
+       id="path35"
+       inkscape:label="kamchatka" />
+    <path
+       style="fill:#000000"
+       d="M 12.597047,12.019679 V 10.70749 h 1.863314 1.863313 v 1.312193 1.312192 h -1.863313 -1.863314 z"
+       id="path34"
+       inkscape:label="quebec" />
+    <path
+       style="fill:#000000"
+       d="m 9.1328593,11.993439 v -1.338437 h 1.6271187 1.627118 v 1.338437 1.338436 H 10.759978 9.1328593 Z"
+       id="path33"
+       inkscape:label="ontario" />
+    <path
+       style="fill:#000000"
+       d="m 4.5664296,11.993439 v -1.390924 h 2.1257518 2.1257517 v 1.390924 1.390924 H 6.6921814 4.5664296 Z"
+       id="path32"
+       inkscape:label="alberta" />
+    <path
+       style="fill:#000000"
+       d="M 24.144341,11.468562 V 8.9229085 h 1.285948 1.285949 v 2.5456535 2.545653 h -1.285949 -1.285948 z"
+       id="path31"
+       inkscape:label="scandinavia" />
+    <path
+       style="fill:#000000"
+       d="m 38.893383,13.56807 v -0.551121 h 1.417168 1.417168 v 0.551121 0.55112 h -1.417168 -1.417168 z"
+       id="path30"
+       inkscape:label="mongolia" />
+    <path
+       style="fill:#000000"
+       d="M 36.00656,9.1328593 V 4.0940404 h 1.180973 1.180973 V 9.1328593 14.171678 H 37.187533 36.00656 Z"
+       id="path29"
+       inkscape:label="siberia" />
+    <path
+       style="fill:#000000"
+       d="m 42.200108,14.749035 v -1.049754 h 0.81356 0.813559 v 1.049754 1.049754 h -0.813559 -0.81356 z"
+       id="path28"
+       inkscape:label="japan" />
+    <path
+       style="fill:#000000"
+       d="M 20.785128,14.722795 V 13.59431 h 1.259705 1.259704 v 1.128485 1.128485 h -1.259704 -1.259705 z"
+       id="path27"
+       inkscape:label="great_britain" />
+    <path
+       style="fill:#000000"
+       d="M 23.776927,15.405135 V 14.4866 h 1.469655 1.469656 v 0.918535 0.918535 h -1.469656 -1.469655 z"
+       id="path26"
+       inkscape:label="northern_europe" />
+    <path
+       style="fill:#000000"
+       d="m 9.8151993,15.037721 v -1.495899 h 2.5981407 2.598141 v 1.495899 1.4959 H 12.41334 9.8151993 Z"
+       id="path25"
+       inkscape:label="eastern_united_states" />
+    <path
+       style="fill:#000000"
+       d="m 3.8840896,15.011481 v -1.522143 h 2.8868233 2.8868233 v 1.522143 1.522144 H 6.7709129 3.8840896 Z"
+       id="path24"
+       inkscape:label="western_united_states" />
+    <path
+       style="fill:#000000"
+       d="m 31.545106,15.037721 v -2.38819 h 1.443412 1.443411 v 2.38819 2.38819 h -1.443411 -1.443412 z"
+       id="path23"
+       inkscape:label="afganistan" />
+    <path
+       style="fill:#000000"
+       d="m 34.851831,15.956256 v -1.522143 h 2.414434 2.414434 v 1.522143 1.522143 h -2.414434 -2.414434 z"
+       id="path22"
+       inkscape:label="china" />
+    <path
+       style="fill:#000000"
+       d="M 27.031164,13.515578 V 8.9753962 h 2.151995 2.151996 v 4.5401858 4.540186 h -2.151996 -2.151995 z"
+       id="path21"
+       inkscape:label="ukraine" />
+    <path
+       style="fill:#000000"
+       d="m 24.61673,17.740838 v -0.944779 h 0.971022 0.971023 v 0.944779 0.944778 H 25.587752 24.61673 Z"
+       id="path20"
+       inkscape:label="southern_europe" />
+    <path
+       style="fill:#000000"
+       d="M 20.837616,17.714598 V 16.6386 h 1.732094 1.732094 v 1.075998 1.075997 H 22.56971 20.837616 Z"
+       id="path19"
+       inkscape:label="western_europe" />
+    <path
+       style="fill:#000000"
+       d="m 5.4062328,18.34445 v -1.600875 h 2.8868233 2.8868229 v 1.600875 1.600875 H 8.2930561 5.4062328 Z"
+       id="path18"
+       inkscape:label="central_america" />
+    <path
+       style="fill:#000000"
+       d="m 36.478949,19.079278 v -1.180973 h 1.4959 1.495899 v 1.180973 1.180973 h -1.495899 -1.4959 z"
+       id="path17"
+       inkscape:label="siam" />
+    <path
+       style="fill:#000000"
+       d="m 32.332421,19.236741 v -1.495899 h 1.863314 1.863313 v 1.495899 1.495899 h -1.863313 -1.863314 z"
+       id="path16"
+       inkscape:label="india" />
+    <path
+       style="fill:#000000"
+       d="m 28.71077,19.656642 v -1.338436 h 1.70585 1.705851 v 1.338436 1.338437 H 30.41662 28.71077 Z"
+       id="path15"
+       inkscape:label="middle_east" />
+    <path
+       style="fill:#000000"
+       d="m 26.611262,20.076544 v -0.918535 h 0.787316 0.787315 v 0.918535 0.918535 h -0.787315 -0.787316 z"
+       id="path14"
+       inkscape:label="egypt" />
+    <path
+       style="fill:#000000"
+       d="m 37.948605,21.414986 v -0.68234 h 1.810825 1.810826 v 0.68234 0.68234 H 39.75943 37.948605 Z"
+       id="path13"
+       inkscape:label="indonesia" />
+    <path
+       style="fill:#000000"
+       d="m 42.62001,21.493716 v -0.708584 h 1.627119 1.627118 V 21.493716 22.2023 H 44.247129 42.62001 Z"
+       id="path12"
+       inkscape:label="new_guinea" />
+    <path
+       style="fill:#000000"
+       d="m 6.403499,21.283765 v -0.971022 h 3.0180426 3.0180424 v 0.971022 0.971022 H 9.4215416 6.403499 Z"
+       id="path11"
+       inkscape:label="venezuela" />
+    <path
+       style="fill:#000000"
+       d="m 18.948059,21.310005 v -2.151996 h 3.647895 3.647894 v 2.151996 2.151996 h -3.647894 -3.647895 z"
+       id="path10"
+       inkscape:label="north_africa" />
+    <path
+       style="fill:#000000"
+       d="m 23.304537,24.61673 v -0.944779 h 1.522144 1.522143 v 0.944779 0.944778 h -1.522143 -1.522144 z"
+       id="path9"
+       inkscape:label="congo" />
+    <path
+       style="fill:#000000"
+       d="M 26.506287,23.409513 V 21.20503 h 1.758338 1.758338 v 2.204483 2.204483 h -1.758338 -1.758338 z"
+       id="path8"
+       inkscape:label="east_africa" />
+    <path
+       style="fill:#000000"
+       d="m 7.2433022,24.61673 v -1.889557 h 1.6271186 1.6271182 v 1.889557 1.889557 H 8.8704208 7.2433022 Z"
+       id="path7"
+       inkscape:label="peru" />
+    <path
+       style="fill:#000000"
+       d="m 38.840896,24.774193 v -2.099508 h 1.837069 1.83707 v 2.099508 2.099508 h -1.83707 -1.837069 z"
+       id="path6"
+       inkscape:label="western_australia" />
+    <path
+       style="fill:#000000"
+       d="M 42.829961,24.879168 V 22.77966 h 1.548387 1.548387 v 2.099508 2.099508 h -1.548387 -1.548387 z"
+       id="path5"
+       inkscape:label="eastern_australia" />
+    <path
+       style="fill:#000000"
+       d="m 28.920721,26.952432 v -1.128485 h 0.603609 0.603608 v 1.128485 1.128486 H 29.52433 28.920721 Z"
+       id="path4"
+       inkscape:label="madagascar" />
+    <path
+       style="fill:#000000"
+       d="m 24.144341,27.634772 v -1.810825 h 2.256971 2.256971 v 1.810825 1.810826 h -2.256971 -2.256971 z"
+       id="path3"
+       inkscape:label="south_africa" />
+    <path
+       style="fill:#000000"
+       d="m 10.864953,26.033898 v -3.411701 h 2.51941 2.519409 v 3.411701 3.4117 h -2.519409 -2.51941 z"
+       id="path2"
+       inkscape:label="brazil" />
+    <path
+       style="fill:#000000"
+       d="m 7.3482776,29.550573 v -2.834335 h 1.5746309 1.5746305 v 2.834335 2.834336 H 8.9229085 7.3482776 Z"
+       id="path1"
+       inkscape:label="argentina" />
+  </g>
+</svg>
