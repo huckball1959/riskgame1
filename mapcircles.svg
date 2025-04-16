@@ -26,8 +26,8 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="0.44097222"
-     inkscape:cx="680.31496"
-     inkscape:cy="726.80315"
+     inkscape:cx="679.18111"
+     inkscape:cy="724.53544"
      inkscape:window-width="1600"
      inkscape:window-height="837"
      inkscape:window-x="-8"
@@ -264,13 +264,13 @@
     </circle>
     <circle
        style="fill:#000000;stroke-width:0.75"
-       id="path1-73"
+       id="southern_europe"
        cx="780.17328"
        cy="704.4646"
        r="31.251968"
        inkscape:label="southern_europe">
       <title
-         id="title19">western_europe</title>
+         id="title19">southern_europe</title>
     </circle>
     <circle
        style="fill:#000000;stroke-width:0.75"
@@ -344,11 +344,14 @@
     </circle>
     <circle
        style="fill:#000000;stroke-width:0.75"
-       id="path1-0"
+       id="argentina"
        cx="288.90549"
        cy="1154.0552"
        r="31.251968"
-       inkscape:label="arentina" />
+       inkscape:label="argentina">
+      <title
+         id="title41">argentina</title>
+    </circle>
     <circle
        style="fill:#000000;stroke-width:0.75"
        id="peru"
